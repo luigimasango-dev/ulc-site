@@ -12,7 +12,7 @@ requests. Drop it anywhere.
 Only facts that are verified on file:
 
 - Reg **2026/027426/07** (CIPC, "IN BUSINESS")
-- **B-BBEE Level 4 EME, 100% procurement recognition** (cert 9450437961, expires **11 Jan 2027**)
+- **B-BBEE Exempted Micro Enterprise, 100% black-owned** (level deliberately not stated on the site until the re-issued affidavit is stamped — see brand-guidelines)
 - SARS income-tax registered
 - Founder: Luigi Masango. Katlehong, Gauteng.
 - Contact: ubuntulabs.ai@gmail.com
