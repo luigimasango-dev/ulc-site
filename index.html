@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>AI-Build Security Review — Ubuntu Lab Consultants (Pty) Ltd</title>
-<meta name="description" content="A security review of the app you ship: permissions, storage, outbound traffic and exposure, with the file and the line for every finding. R2 500 per app.">
+<title>Ubuntu Lab Consultants (Pty) Ltd — fixed prices, written deliverables</title>
+<meta name="description" content="Seven fixed-price jobs for South African businesses: a field-ops pilot, competitor teardown, app security review, B-BBEE readiness scan, payroll integrity sweep and due-diligence report. Price and delivery window on every one.">
 <meta name="color-scheme" content="light dark">
 <meta property="og:type" content="website">
-<meta property="og:title" content="AI-Build Security Review — Ubuntu Lab Consultants (Pty) Ltd">
-<meta property="og:description" content="What your app actually does, written down with the file and the line. R2 500 per app.">
+<meta property="og:title" content="Ubuntu Lab Consultants (Pty) Ltd — fixed prices, written deliverables">
+<meta property="og:description" content="Seven fixed-price jobs. The price and the delivery window are on the page, not in a quote.">
 <meta property="og:url" content="https://ubuntulabs.co.za">
 <link rel="canonical" href="https://ubuntulabs.co.za/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%237c2d12'/%3E%3Cpath d='M9 22V10h2.6v12zm6.2 0V10h2.4l4.4 7.4V10H24v12h-2.4l-4.4-7.4V22z' fill='%23faf8f5'/%3E%3C/svg%3E">
@@ -31,7 +31,7 @@ body{
   font-family:var(--sans); font-size:1.0625rem; line-height:1.62;
   font-kerning:normal; text-rendering:optimizeLegibility;
 }
-.wrap{max-width:44rem; margin:0 auto; padding:2.5rem 1.5rem 4rem}
+.wrap{max-width:46rem; margin:0 auto; padding:2.5rem 1.5rem 4rem}
 @media (min-width:48rem){.wrap{padding:4rem 2rem 6rem}}
 
 .masthead{
@@ -47,7 +47,8 @@ h1{
   font-family:var(--serif); font-weight:400; font-size:clamp(2rem,6vw,3rem);
   line-height:1.1; letter-spacing:-.015em; margin:0 0 1.25rem; text-wrap:balance;
 }
-.lead{font-size:1.1875rem; line-height:1.55; margin:0 0 3rem; max-width:34rem}
+.lead{font-size:1.1875rem; line-height:1.55; margin:0 0 1.4rem; max-width:36rem}
+.lead-sub{font-size:1.0625rem; line-height:1.6; margin:0 0 3rem; max-width:36rem; color:var(--muted)}
 
 h2{
   font-family:var(--mono); font-size:.74rem; font-weight:600;
@@ -56,39 +57,25 @@ h2{
 }
 section{border-top:1px solid var(--rule); padding-top:1.6rem; margin-bottom:3rem}
 
-ol.cover{list-style:none; counter-reset:c; margin:0; padding:0}
-ol.cover li{
-  counter-increment:c; position:relative; padding-left:2.75rem;
-  margin-bottom:1.15rem;
-}
-ol.cover li::before{
-  content:counter(c,decimal-leading-zero);
-  position:absolute; left:0; top:.15rem;
-  font-family:var(--mono); font-size:.72rem; letter-spacing:.04em;
-  color:var(--accent);
-}
-ol.cover strong{font-weight:600}
-ol.cover span{display:block; color:var(--muted); font-size:.97rem; line-height:1.5}
+ul.jobs{list-style:none; margin:0; padding:0}
+ul.jobs li{border-top:1px solid var(--rule); padding:1.25rem 0; margin:0}
+ul.jobs li:first-child{border-top:0; padding-top:0}
+.job-head{display:flex; flex-wrap:wrap; gap:.3rem 1rem; align-items:baseline; justify-content:space-between}
+.job-name{font-weight:600; font-size:1.05rem}
+.job-price{font-family:var(--mono); font-size:1rem; white-space:nowrap; color:var(--accent); font-weight:600}
+.job-unit{font-family:var(--mono); font-size:.78rem; color:var(--muted); font-weight:400}
+.job-what{display:block; color:var(--muted); font-size:.97rem; line-height:1.5; margin-top:.4rem}
+.job-meta{display:block; font-family:var(--mono); font-size:.7rem; letter-spacing:.07em;
+  text-transform:uppercase; color:var(--muted); margin-top:.5rem}
 
-.price{
-  background:var(--field); border-left:3px solid var(--accent);
-  padding:1.75rem 1.75rem 1.6rem; margin:0;
+ol.steps{list-style:none; counter-reset:s; margin:0; padding:0}
+ol.steps li{counter-increment:s; position:relative; padding-left:2.75rem; margin-bottom:1.15rem}
+ol.steps li::before{
+  content:counter(s,decimal-leading-zero); position:absolute; left:0; top:.15rem;
+  font-family:var(--mono); font-size:.72rem; letter-spacing:.04em; color:var(--accent);
 }
-.price .figure{
-  font-family:var(--serif); font-size:clamp(2.25rem,8vw,3.25rem);
-  line-height:1; letter-spacing:-.02em; display:block; margin-bottom:.35rem;
-}
-.price .of{font-size:.95rem; color:var(--muted); display:block; margin-bottom:1.15rem}
-.price dl{
-  display:grid; grid-template-columns:auto 1fr; gap:.4rem 1.1rem;
-  margin:0 0 1.15rem; font-family:var(--mono); font-size:.8rem;
-}
-.price dt{color:var(--muted); letter-spacing:.03em}
-.price dd{margin:0}
-.price p{margin:0; font-size:.92rem; color:var(--muted); line-height:1.5}
-.price p+p{margin-top:.85rem}
-.price .alt{color:var(--ink)}
-.price .alt b{font-family:var(--mono); font-size:.8rem; font-weight:600}
+ol.steps strong{font-weight:600}
+ol.steps span{display:block; color:var(--muted); font-size:.97rem; line-height:1.5}
 
 ul.not{margin:0; padding:0; list-style:none}
 ul.not li{padding-left:1.1rem; position:relative; margin-bottom:.7rem; font-size:.97rem; color:var(--muted)}
@@ -105,7 +92,7 @@ ul.send li{margin-bottom:.4rem}
 
 footer{border-top:1px solid var(--rule); padding-top:1.75rem; margin-top:4rem;
   font-family:var(--mono); font-size:.75rem; line-height:1.85; color:var(--muted)}
-footer p{margin:0 0 1.15rem; max-width:40rem}
+footer p{margin:0 0 1.15rem; max-width:42rem}
 footer strong{color:var(--ink); font-weight:600}
 footer .id{font-size:.78rem; color:var(--ink)}
 
@@ -128,58 +115,114 @@ footer .id{font-size:.78rem; color:var(--ink)}
   </div>
 
   <main>
-    <h1>A security review of the app you ship.</h1>
-    <p class="lead">I take the app apart and write down what it actually does: what it asks
-    the device for, what it keeps, and which servers it talks to. Every finding carries the
-    file and the line. The report also names what could not be checked.</p>
+    <h1>Seven jobs. Seven prices. Nothing quoted.</h1>
+    <p class="lead">Every piece of work below has a fixed price, a delivery window
+    and a written deliverable. The price is on this page, not in a proposal, and
+    it is the whole price.</p>
+    <p class="lead-sub">Before work starts: one email, a written scope, and an
+    invoice paid by EFT. Nothing is billed on delivery, on award, or as a share
+    of anything you win.</p>
 
     <section>
-      <h2>What the review covers</h2>
-      <ol class="cover">
-        <li><strong>Permissions.</strong><span>What the app asks for on the device, and whether each one earns its place.</span></li>
-        <li><strong>Storage.</strong><span>What it keeps on the device, in what form, and for how long.</span></li>
-        <li><strong>Outbound traffic.</strong><span>Every host it contacts, and what it hands to each one.</span></li>
-        <li><strong>Exposure.</strong><span>SQL injection, cross-site scripting, insecure direct object references, server-side request forgery and path traversal, tested against the app as built, not as described.</span></li>
-        <li><strong>Evidence.</strong><span>File and line for every finding, the tools and versions used, and an explicit list of what the review did not cover.</span></li>
-      </ol>
+      <h2>The price list</h2>
+      <ul class="jobs">
+    <li>
+      <div class="job-head">
+        <span class="job-name">FieldOps pilot</span>
+        <span class="job-price">R15 000<span class="job-unit"> one site, 30 days</span></span>
+      </div>
+      <span class="job-what">Two apps running at one site beside your paper pre-use checklist: a crew app for the field and an office app for control. Ends in a day-30 site report. Your paper checklist stays the legal record.</span>
+      <span class="job-meta">Delivery: setup + 30 days; report by day 35 &middot; 100% prepaid by EFT before work starts</span>
+    </li>
+    <li>
+      <div class="job-head">
+        <span class="job-name">Competitor Monetization Teardown</span>
+        <span class="job-price">R950<span class="job-unit"> per app</span></span>
+      </div>
+      <span class="job-what">One competitor app taken apart from public sources: the money model, the exact prices, where the paywall sits, what it collects, three things it does right and three gaps. What to copy, and what to avoid.</span>
+      <span class="job-meta">Delivery: 3 business days &middot; 100% prepaid by EFT before work starts</span>
+    </li>
+    <li>
+      <div class="job-head">
+        <span class="job-name">AI-Build Security Review</span>
+        <span class="job-price">R2 500<span class="job-unit"> per app</span></span>
+      </div>
+      <span class="job-what">What the app declares, what it phones home to, what it stores on the device and what it exposes. Every finding carries the file and the line, and the report names what could not be checked.</span>
+      <span class="job-meta">Delivery: 5 business days &middot; 100% prepaid by EFT before work starts</span>
+    </li>
+    <li>
+      <div class="job-head">
+        <span class="job-name">AI-Build Security Review, with the API surface</span>
+        <span class="job-price">R4 500<span class="job-unit"> per app</span></span>
+      </div>
+      <span class="job-what">The same review, extended to the backend the app talks to: the endpoints, the authentication, what the API accepts and returns without authorisation, and where the data actually lands.</span>
+      <span class="job-meta">Delivery: 7 business days &middot; 100% prepaid by EFT before work starts</span>
+    </li>
+    <li>
+      <div class="job-head">
+        <span class="job-name">B-BBEE Readiness Scan</span>
+        <span class="job-price">R1 800<span class="job-unit"> per business</span></span>
+      </div>
+      <span class="job-what">Where the business sits against the generic scorecard, and the three cheapest fixes ranked by points per rand. This is an estimate. It is not a certificate and not a verification, and the report says so.</span>
+      <span class="job-meta">Delivery: 4 business days &middot; 100% prepaid by EFT before work starts</span>
+    </li>
+    <li>
+      <div class="job-head">
+        <span class="job-name">Payroll Integrity Sweep</span>
+        <span class="job-price">R2 200<span class="job-unit"> per export, up to 250 employees</span></span>
+      </div>
+      <span class="job-what">An offline scan of one payroll export for ghost employees, duplicate bank accounts and salary outliers. The report carries counts and truncated identifiers only, never personal data. The file is deleted on delivery.</span>
+      <span class="job-meta">Delivery: 3 business days &middot; 100% prepaid by EFT before work starts</span>
+    </li>
+    <li>
+      <div class="job-head">
+        <span class="job-name">Supplier / Client Due-Diligence Report</span>
+        <span class="job-price">R1 200<span class="job-unit"> per entity</span></span>
+      </div>
+      <span class="job-what">A public-record screen of one entity: domain age and certificate history, subdomains, registration status, published footprint. It states plainly what it checked, what it did not, and what it may not be relied on for.</span>
+      <span class="job-meta">Delivery: 2 business days &middot; 100% prepaid by EFT before work starts</span>
+    </li>
+      </ul>
     </section>
 
     <section>
-      <h2>Price</h2>
-      <div class="price">
-        <span class="figure">R2 500</span>
-        <span class="of">one app</span>
-        <dl>
-          <dt>delivery</dt><dd>5 business days</dd>
-          <dt>terms</dt><dd>100% prepaid by EFT before work starts</dd>
-          <dt>format</dt><dd>PDF, sealed with a SHA-256 digest</dd>
-        </dl>
-        <p class="alt">Extended to the backend the app talks to &mdash; endpoints, authentication,
-        and what the API returns without authorisation: <b>R4 500</b>, 7 business days.</p>
-        <p>The review is done under a written scope. No app is examined without one, and no
-        verdict is claimed beyond what was observed.</p>
-        <p>We also approach app studios directly, and that first review is free. If one of our
-        emails reached you, that offer stands &mdash; reply to it.</p>
-      </div>
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><strong>You email.</strong><span>Name the job and give the one input it
+        needs: the app, the export, the entity name, or the site.</span></li>
+        <li><strong>You get a written scope and an invoice.</strong><span>The scope
+        says what will be examined and what will not. If it does not match what you
+        asked for, say so before paying.</span></li>
+        <li><strong>Work starts when the payment clears.</strong><span>The deliverable
+        arrives inside the window on this page, as a PDF sealed with a SHA-256 digest.</span></li>
+      </ol>
     </section>
 
     <section>
       <h2>What this is not</h2>
       <ul class="not">
-        <li>Not a penetration test. Exposure is confirmed only as far as a finding needs it.</li>
-        <li>Not a certificate or an audit opinion. It reports what was observed and stops there.</li>
-        <li>Not a guarantee that the app is free of defects, or that these are all of them.</li>
-        <li>No source code is required. If you send source, it is used for this review only and deleted on request.</li>
+        <li>Not a certificate, an audit opinion or a verification of anything. Each
+        report says what was observed and stops there.</li>
+        <li>Not a guarantee that a review found everything. Where a check was not
+        possible, the report names it.</li>
+        <li>No source code is required, for any job here. If you send it, it is used
+        for that job only and deleted on request.</li>
+        <li>No hourly rate, no disbursements, no retainer, and no share of anything
+        you win or save. The price on this page is the price.</li>
+        <li>ULC holds no DHA or National Population Register access, no NCR
+        registration, no PSIRA registration and no SSA vetting accreditation. Where
+        regulated activity is needed, we work as a consortium partner, not as the
+        prime.</li>
       </ul>
     </section>
 
     <section class="contact">
       <h2>One way to reach a human</h2>
-      <a href="mailto:ubuntulabs.ai@gmail.com?subject=AI-Build Security Review">ubuntulabs.ai@gmail.com</a>
+      <a href="mailto:ubuntulabs.ai@gmail.com?subject=Enquiry">ubuntulabs.ai@gmail.com</a>
       <ul class="send">
-        <li>The name of the app and the platform it ships on.</li>
-        <li>A link to it, or the installable file.</li>
-        <li>Whether it has a backend of its own.</li>
+        <li>The job you want, by name.</li>
+        <li>Your business name and the one input that job needs.</li>
+        <li>Any deadline you are working to.</li>
       </ul>
     </section>
   </main>
@@ -189,14 +232,15 @@ footer .id{font-size:.78rem; color:var(--ink)}
     Registration 2026/027426/07<br>
     291 Dukathole Str, Monaheng Section, Katlehong, Gauteng, 1431, South Africa</p>
     <p><strong>B-BBEE:</strong> Exempted Micro Enterprise (100% black-owned).</p>
-    <p>This page sets no cookies, loads nothing from another server and runs no analytics.
-    If you email us we hold your address and what you send for the length of the review only,
-    and delete it once the report is delivered &mdash; or sooner, if you ask. It is used to
-    answer you and to do the review, and for nothing else. You can ask what we hold, have it
-    corrected, or have it deleted, by writing to the same address. We do not sell it, share it,
-    or add you to a list, and every email we send carries a way to stop it. Our host keeps
-    standard web-server access logs. If you are not satisfied with how we handled it, the
-    Information Regulator of South Africa takes complaints.</p>
+    <p>This page sets no cookies, loads nothing from another server and
+    runs no analytics. If you email us we hold your address and what you send for the
+    length of the job only, and delete it once the deliverable is sent &mdash; or
+    sooner, if you ask. It is used to answer you and to do the work, and for nothing
+    else. You can ask what we hold, have it corrected, or have it deleted, by writing
+    to the same address. We do not sell it, share it, or add you to a list, and every
+    email we send carries a way to stop it. Our host keeps standard web-server access
+    logs. If you are not satisfied with how we handled it, the Information Regulator
+    of South Africa takes complaints.</p>
   </footer>
 
 </div>
